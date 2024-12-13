@@ -1,0 +1,34 @@
+# Игнорирование системных файлов и метаданных
+.DS_Store
+Thumbs.db
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.cache
+
+# Папки для сборки и зависимости
+node_modules/
+dist/
+build/
+out/
+coverage/
+
+# Конфиденциальные файлы
+.env
+.env.local
+*.key
+*.pem
+
+# Сторонние файлы IDE/редакторов
+.vscode/
+.idea/
+*.iml
+
+# Операционная система
+*.swp
+*.swo
+*.bak
+
+# Git
+.git/
