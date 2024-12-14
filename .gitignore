@@ -10,7 +10,6 @@ Thumbs.db
 # Папки для сборки и зависимости
 node_modules/
 dist/
-build/
 out/
 coverage/
 

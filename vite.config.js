@@ -12,8 +12,8 @@ import postcssCombineMediaQuery from "postcss-combine-media-query";
 import postcssSortMediaQueries from "postcss-sort-media-queries";
 import postcssPresetEnv from "postcss-preset-env";
 
-const root = resolve(__dirname, "./src");
-const outDir = "../../static_nodejs/nodejs"; // Output directory with files after building
+const root = resolve(__dirname, 'src/html/pages');
+const outDir = "build"; // Output directory with files after building
 dotenv.config({ path: resolve(__dirname, ".env") });
 
 export default defineConfig({
@@ -116,8 +116,8 @@ export default defineConfig({
     },
     rollupOptions: {
       input: {
-        main: resolve(root, 'src/html/pages/home/index.html'),
-        about: resolve(root, 'src/html/pages/about/index.html'),
+        main: resolve('/index.html'),
+        about: resolve('src/html/pages/about/index.html'),
       },
       output: {
         assetFileNames: ({name}) => {
